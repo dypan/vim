@@ -10,3 +10,4 @@ openssl pkcs12 -in ./YOUR-PFX-FILE.pfx -nocerts -nodes -out domain.rsa
 [original](https://blog.knoldus.com/easiest-way-to-setup-ssl-on-nginx-using-pfx-files/)
 
 from web
+test
