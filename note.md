@@ -13,3 +13,8 @@ from web
 test
 
 Retrofit2
+
+
+docker 
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
