@@ -44,3 +44,6 @@ perl-ExtUtils-Embed libX* ncurses-devel gtk2-devel
 	  --without-x
   
 docker run -it --rm -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6
+
+
+Caused by: org.apache.kafka.clients.consumer.CommitFailedException: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured max.poll.interval.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
